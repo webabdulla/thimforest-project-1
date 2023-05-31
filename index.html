@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'><link rel="stylesheet" href="./style.css">
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- partial:index.partial.html -->
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+</head>
+<body>
+    <div class="bg-area">
+        <div class="menu-section">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#">Mega Menu</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile_nav" aria-controls="mobile_nav" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span> 
+                    </button>
+                    <div class="collapse navbar-collapse" id="mobile_nav">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 float-md-right">
+                    </ul>
+                    <ul class="navbar-nav navbar-light">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                        <li class="nav-item dmenu dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                            </a>
+                            <div class="dropdown-menu sm-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Software Development</a>
+                                <a class="dropdown-item" href="#">Web Designing & Development</a>
+                                <a class="dropdown-item" href="#">Mobile Application</a>
+                                <a class="dropdown-item" href="#">Business Solutions & Business Process</a>
+                                <a class="dropdown-item" href="#">Digital Marketing & SEO Services</a>
+                                <a class="dropdown-item" href="#">Web Hosting & Maintenance</a>
+                                <a class="dropdown-item" href="#">Cyber Security</a>
+                                <a class="dropdown-item" href="#">Block Chain Implementation</a>
+                                <a class="dropdown-item" href="#">Big Data</a>
+                            </div>
+                        </li>
+                        <!--========-->
+                        <li class="nav-item dropdown megamenu-li dmenu">
+                            <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Services</a>
+                            <div class="dropdown-menu megamenu sm-menu border-top" aria-labelledby="dropdown01">
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-3 border-right mb-4">
+                                        <h6>Ecommerce</h6>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-magento"></i> Magento Development</a>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-magento"></i> Magento 2 Migration</a>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-magento"></i> Odoo ERP</a>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-magento"></i> Mobile Commerce</a>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-magento"></i> CRM for Commerce</a>
+                                    </div>
+                                   <div class="col-sm-6 col-lg-3 border-right mb-4">
+                                        <h6>LAMP Technology</h6>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-php"></i> PHP Website Development</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-circle"></i> Phalcon Development</a>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-laravel"></i> Laravel Development</a>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-wordpress-simple"></i> WordPress Development</a>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-php"></i> Symfony Development</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3 border-right mb-4">
+                                        <h6>Mobile</h6>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-apple"></i> iPhone App Development</a>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-android"></i> Android App Development</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-mobile-alt"></i> Phone Gap App Development</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-tablet-alt"></i> Hybrid App Development</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-mobile-alt"></i> Ionic Development</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-tablet-alt"></i> React Native Development</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-mobile-alt"></i> Xamarin App Development</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3 mb-4">
+                                        <h6>Node.js & MongoDB</h6>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-cubes"></i> Full Stack Development</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-cube"></i> MEAN Stack</a>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-angular"></i> AngularJS</a>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-node-js"></i> Node.JS Development</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-leaf fa-rotate-90"></i> MongoDB Development</a>
+                                    </div>
+                                </div>
+                                 <div class="row">
+                                    <div class="col-sm-6 col-lg-3 border-right mb-4">
+                                        <h6>Microsoft Technology</h6>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-windows"></i> Microsoft App Development</a>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-windows"></i> MS Desktop App Development</a>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-windows"></i> SharePoint Development</a>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-windows"></i> ASP.NET Development</a>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-windows"></i> CMS Development</a>
+                                    </div>
+                                   <div class="col-sm-6 col-lg-3 border-right mb-4">
+                                        <h6>Cloud Services</h6>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-cloud"></i> DevOps</a>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-amazon"></i> Amazon Web Services</a>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-windows"></i> Azure Cloud Service</a>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-google"></i> Google App Engine Services</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3 border-right mb-4">
+                                        <h6>Enterprise Services</h6>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-laptop"></i> Augmented Reality</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-laptop"></i> CRM</a>
+                                        <a class="dropdown-item" href="#"><i class="fab fa-buromobelexperte"></i> Enterprise Mobility Services</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-th-large"></i> Blockchain Services</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-briefcase"></i> Business Intelligence</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3 mb-4">
+                                        <h6>Digital Marketing</h6>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-laptop"></i> Digital Marketing</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-laptop"></i> PPC Management Services</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-laptop"></i> E-commerce SEO Services</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-laptop"></i> Conversion Rate Optimization</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--=========-->
+                        <li class="nav-item"><a class="nav-link" href="<?php echo siteURL;?>portfolio.php">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="<?php echo siteURL;?>career.php">Careers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="<?php echo siteURL;?>contact-us.php">Contact us</a></li>
+               
+                    </ul>
+                    </div>
+            </nav>
+            </div>
+        </div>
+        <div class="bg-section">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="bg-text">
+                        <h1>Australia's Fastest Growing Construction Company</h1>
+                        <p>Stack partner with ambitious property development firms to manage large-scale construction projects from initial concept through final-build.</p>
+
+                        <div class="bg-button">
+                            <a href="#">VIEW OUR PROJECT</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class=" brfore">
+                    <div class="service-section brfore">
+                        <div class="service-name">
+                            <h3>Half Year Results 2017</h3>
+                            <p>28 February, 2017</p>
+                            <a href="#">Read Story</a>
+                        </div>
+                        <div class="new">
+                            <p>NEW</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="service-section">
+                        <div class="service-name">
+                            <h3>Awarded HSBC Contract</h3>
+                            <p>24 January, 2017</p>
+                            <a href="#">Read Story</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="service-section">
+                        <div class="service-name">
+                            <h3>Environmental Statement</h3>
+                            <p>10 January, 2017</p>
+                            <a href="#">Read Story</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- golobal-area -->
+<div class="golobal-area">
+    <div class="secend-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-box">
+                        <p> <strong>Global</strong></p>
+                        <p>enquiries@stackconstruction.net</p>
+                    </div>
+                    <div class="text-box">
+                        <p> <strong>Melbourne</strong></p>
+                        <p>Rialto Building <br>
+                            200 Bourke Street <br>
+                            Melbourne, Victoria</p>
+                    </div>
+                    <div class="text-box">
+                        <p> <strong>Global</strong></p>
+                        <p>Suite 102 <br>
+                            364 Malvern Road <br>
+                            Armadale, Victoria</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="long-text">
+                        <h2>End-to-end planning and construction</h2>
+
+                        <p>Stack offers a clean and contemporary look to suit a range of purposes from corporate, tech startup, marketing site to digital storefront. Elements have been designed to showcase content in a diverse yet consistent manner.</p>
+                        <p>Multiple font and colour scheme options mean that dramatically altering the look of your site is just clicks away — Customizing your site in the included Variant Page Builder makes experimenting with styles and content arrangements dead simple.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- proggrs-bar -->
+
+<div class="section-padding-1">
+    <div class="progress-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="circle">
+                        <div class="second circle">
+                            <p> Concept</p>
+                                                            
+                          </div>
+                    </div>
+                    <span class="bottom-text">Stack is built with customization and ease-of-use at its core — whether you're a seasoned developer or just starting out.</span>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="circle">
+                        <div class="third circle"> 
+                            <p>Plan</p>
+                        </div>
+                    </div>
+                    <span class="bottom-text">Select from over 270 interface blocks, customise the look to build your perfect page.</span>
+                </div>
+                <div class="col-md-4">
+                    <div class="circle">
+                        <div class="forth circle">
+                            <p> Construct</p>
+                        </div>
+                    </div> 
+                    <span class="bottom-text">Download your page as a semantic HTML document and easily make further customisations and additions in your editor.</span>          
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- class section -->
+<div class="section-padding">
+    <div class="class-section">
+        <div class="cotainer">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="class-img">
+                        <img src="http://trystack.mediumra.re/img/construction-2.jpg" alt="">
+                    </div>
+                    <div class="class-content">
+                        <div class="content-desc">
+                            <h3>Class-leading design and building processes</h3>
+
+                            <p>Stack offers a clean and contemporary to suit a range of purposes from corporate, tech startup, marketing site to digital storefront. Elements have been designed to showcase content in a diverse yet consistent manner.</p>
+                            <p>Multiple font and colour scheme options mean that dramatically altering the look of your site is just clicks away — Customizing your site in the included Variant Page Builder makes experimenting with styles and content arrangements dead simple.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- case-section -->
+
+<div class="section-padding">
+    <div class="container-fluid">
+        <div class="padding-lr">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="case-title">
+                        <h3>Additional Use-Case page</h3>
+                        <p>They are a good way to get you started if you want to build something similar or use from existing apps which will reduce the cost, efforts and time of the developers.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="case-section">
+                        <div class="cardff">
+                            <div class="case-heading">
+                                <h3>Inbox</h3>
+                            </div>
+                            <div class="case-img">
+                                <img src="https://nioboard.themenio.com/images/preview/app1.jpg" alt="">
+                            </div>
+                            <div class="case-btn">
+                                <a class="btn-1" href="#">Html</a>
+                                <a class="btn-2" href="#">Vue js</a>
+                                <a class="btn-3" href="#">React</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="case-section">
+                        <div class="cardff">
+                            <div class="case-heading">
+                                <h3>User Cards</h3>
+                            </div>
+                            <div class="case-img">
+                                <img src="https://nioboard.themenio.com/images/preview/page2.jpg" alt="">
+                            </div>
+                            <div class="case-btn">
+                                <a class="btn-1" href="#">Html</a>
+                                <a class="btn-2" href="#">Vue js</a>
+                                <a class="btn-3" href="#">React</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="case-section">
+                        <div class="cardff">
+                            <div class="case-heading">
+                                <h3>User Profile</h3>
+                            </div>
+                            <div class="case-img">
+                                <img src="https://nioboard.themenio.com/images/preview/page3.jpg" alt="">
+                            </div>
+                            <div class="case-btn">
+                                <a class="btn-1" href="#">Html</a>
+                                <a class="btn-2" href="#">Vue js</a>
+                                <a class="btn-3" href="#">React</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="case-section">
+                        <div class="cardff">
+                            <div class="case-heading">
+                                <h3>User Edit</h3>
+                            </div>
+                            <div class="case-img">
+                                <img src="https://nioboard.themenio.com/images/preview/page4.jpg" alt="">
+                            </div>
+                            <div class="case-btn">
+                                <a class="btn-1" href="#">Html</a>
+                                <a class="btn-2" href="#">Vue js</a>
+                                <a class="btn-3" href="#">React</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="case-section">
+                        <div class="cardff">
+                            <div class="case-heading">
+                                <h3>Products</h3>
+                            </div>
+                            <div class="case-img">
+                                <img src="https://nioboard.themenio.com/images/preview/page5.jpg" alt="">
+                            </div>
+                            <div class="case-btn">
+                                <a class="btn-1" href="#">Html</a>
+                                <a class="btn-2" href="#">Vue js</a>
+                                <a class="btn-3" href="#">React</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="case-section">
+                        <div class="cardff">
+                            <div class="case-heading">
+                                <h3>Categories</h3>
+                            </div>
+                            <div class="case-img">
+                                <img src="https://nioboard.themenio.com/images/preview/page6.jpg" alt="">
+                            </div>
+                            <div class="case-btn">
+                                <a class="btn-1" href="#">Html</a>
+                                <a class="btn-2" href="#">Vue js</a>
+                                <a class="btn-3" href="#">React</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="case-section">
+                        <div class="cardff">
+                            <div class="case-heading">
+                                <h3>Add Product</h3>
+                            </div>
+                            <div class="case-img">
+                                <img src="https://nioboard.themenio.com/images/preview/page7.jpg" alt="">
+                            </div>
+                            <div class="case-btn">
+                                <a class="btn-1" href="#">Html</a>
+                                <a class="btn-2" href="#">Vue js</a>
+                                <a class="btn-3" href="#">React</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="case-section">
+                        <div class="cardff">
+                            <div class="case-heading">
+                                <h3>Edit Product</h3>
+                            </div>
+                            <div class="case-img">
+                                <img src="https://nioboard.themenio.com/images/preview/page8.jpg" alt="">
+                            </div>
+                            <div class="case-btn">
+                                <a class="btn-1" href="#">Html</a>
+                                <a class="btn-2" href="#">Vue js</a>
+                                <a class="btn-3" href="#">React</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 offset-3">
+                    <div class="case-section">
+                        <div class="cardff">
+                            <div class="case-heading">
+                                <h3>Auth Register</h3>
+                            </div>
+                            <div class="case-img">
+                                <img src="https://nioboard.themenio.com/images/preview/page11.jpg" alt="">
+                            </div>
+                            <div class="case-btn">
+                                <a class="btn-1" href="#">Html</a>
+                                <a class="btn-2" href="#">Vue js</a>
+                                <a class="btn-3" href="#">React</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="case-section">
+                        <div class="cardff">
+                            <div class="case-heading">
+                                <h3>Page 404</h3>
+                            </div>
+                            <div class="case-img">
+                                <img src="https://nioboard.themenio.com/images/preview/page14.jpg" alt="">
+                            </div>
+                            <div class="case-btn">
+                                <a class="btn-1" href="#">Html</a>
+                                <a class="btn-2" href="#">Vue js</a>
+                                <a class="btn-3" href="#">React</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- apps section -->
+<div class="section-padding">
+    <div class="app-section-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-9" style="margin:auto;">
+                    <div class="single-app">
+                        <div class="apps-title">
+                            <h3>Conceptual Apps & Premium Theme</h3>
+                            <p>An overview of Nioboard is a fully clean and premium designed responsive admin dashboard template that included beautiful hand-crafted components & elements. Nioboard completely focusing on conceptual base apps or dashboard, as it’s equipped with pre-built screens as well.</p>
+                        </div>
+                        <div class="single-apps-item">
+                            <div class="apps-inner">
+                                <div class="apps-count">
+                                    <div class="number">280</div>
+                                    <div class="content">Apps Concept
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="apps-inner">
+                                <div class="apps-count">
+                                    <div class="number">406</div>
+                                    <div class="content">Dashboard
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="apps-inner">
+                                <div class="apps-count">
+                                    <div class="number">430</div>
+                                    <div class="content">Prescreens</div> 
+                                </div>
+                            </div>
+                            <div class="apps-inner">
+                                <div class="apps-count">
+                                    <div class="number">270</div>
+                                    <div class="content">Handmade icons</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="apps-img">
+                        <img src="https://nioboard.themenio.com/images/preview/app-group.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- web section -->
+<div class="sectiion-padding">
+    <div class="web-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- flip-box section -->
+<div class="services-box">
+    <div class="service">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="./img/dell-7Bmk9mAXP2I-unsplash.jpg">
+            
+          </div>
+          <div class="flip-box-back">
+            <p>A laptop, laptop computer, or notebook computer is a small, portable personal computer (PC) with a screen and alphanumeric keyboard.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="img/dell-uifTyG8vUCk-unsplash.jpg">
+            
+          </div>
+          <div class="flip-box-back">
+            <p>We all know the computer. it is one of the biggest inventions of modern science. The laptop is a smaller version of a computer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="img/mailchimp-04X1Yp9hNH8-unsplash.jpg">
+            
+          </div>
+          <div class="flip-box-back">
+            <p>. It is easy to carry and it can be used remotely. You can carry this machine anywhere with you.</p>
+          </div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="service">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="img/mailchimp-0qnRfgnZIsI-unsplash.jpg">
+            
+          </div>
+          <div class="flip-box-back">
+            <p>You can keep that on your backpack or there are some different bags for laptops. There are and keyboard in it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="img/mailchimp-lAx4E6Gl06s-unsplash.jpg">
+            
+          </div>
+          <div class="flip-box-back">
+            <p> You don’t need to use any portable keyboard or mouse. But if you want to use one, you can use because it has so many USB ports. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="img/mailchimp-Vc2dD4l57og-unsplash.jpg">
+            
+          </div>
+          <div class="flip-box-back">
+            <p>The LCD screen of a laptop is so good and it is almost like a portable LCD monitor. It is also known as a notebook computer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- footer-section -->
+
+<!-- footer section -->
+<div class="footer-area">
+    <div class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+           <div class="footer">
+            <div class="footer-text">
+              <p> <strong> Our Privacy policy </strong></p>
+              <p>Copyright @ 2022 -construction tools manufacture </p>
+            </div>
+            <div class="socal-icon">
+              <div class="icon">
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Famikibria"  target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="https://github.com/kibria-khandaker" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <a href="hhttps://www.linkedin.com/authwall?trk=bf&trkInfo=AQHam3BbjBy9KwAAAYPl5qq46mbYY1PZ1jV8mPmonMzAOtz1ipFuA8pvWJL2iVLons8WNiDiazMjwPvOUqnACQo5FMN2_0INdG5OQ6-pHsjAXkJoCqYsNcm8C9Szi1XgXXiZUak=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fkibria-khandaker%2F" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+            </div>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<script>
+
+
+
+    $(".number").counterUp({time:5000});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
+<script src="examples.js"></script>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+  
+</body>
+</html>
+
+
+
+<!-- web site link-    http://trystack.mediumra.re/home-construction.html-->
